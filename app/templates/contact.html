@@ -1,25 +1,23 @@
 {% extends "layout.html" %}
 
 {% block content %}
-
-<h3>Talk to us!</h3>
-    
+   
     {% if form %}
     
     <form action="" method="post">
       {{ form.hidden_tag() }}
       <p>
-        {{ form.name.label }}<br>
-        {{ form.name() }}<br>
+        {{ form.name.label }}
+        {{ form.name() }}
         
-        {{ form.email.label }}<br>
-        {{ form.email() }}<br>
+        {{ form.email.label }}
+        {{ form.email() }}
         
-        {{ form.phone_number.label }}<br>
-        {{ form.phone_number() }}<br>
+        {{ form.phone_number.label }}
+        {{ form.phone_number() }}
         
-        {{ form.feedback.label }}<br>
-        {{ form.feedback() }}<br>
+        {{ form.feedback.label }}
+        {{ form.feedback() }}
       </p>
       <p>{{ form.submit() }}</p>
     </form>

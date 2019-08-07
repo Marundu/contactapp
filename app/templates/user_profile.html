@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h3>User Profile</h3>
+
+<body>
+
+  <p> Username: {{ current_user.username }} </p>
+  <p> Email address: {{ current_user.email }} </p>
+  <p> About me: {{ current_user.about_me }} </p>
+  
+  <hr>
+
+  <a href="{{ url_for('edit_profile') }}">Edit profile</a>
+
+</body>
+
+{% endblock %}
